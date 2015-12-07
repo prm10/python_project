@@ -13,6 +13,8 @@ class WebCrawlingItem(scrapy.Item):
     # name = scrapy.Field()
     # pass
     name = scrapy.Field()  # 手机型号
+    describe = scrapy.Field()  # 描述
+    level = scrapy.Field()  # 评级
     price = scrapy.Field()  # 价格
     commentNum = scrapy.Field  # 评论数
     commentLevel = scrapy.Field  # 评论等级

@@ -7,5 +7,14 @@
 
 
 class WebCrawlingPipeline(object):
+    def __init__(self):
+        self.file = file('pconline.txt','w')
+        self.file.write("")
+        self.file = file('pconline.txt','a')
     def process_item(self, item, spider):
+        s='name: '+item['name']+\
+          '\r\ndecribe: '+item['decribe']+\
+          '\r\nlevel: '+item['level']+\
+          '\r\nprice: '+item['price']
+        self.file.write(s)
         return item

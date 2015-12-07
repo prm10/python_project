@@ -1,0 +1,12 @@
+2015-12-07 16:21:42 [scrapy] INFO: Scrapy 1.0.3 started (bot: web_crawling)
+2015-12-07 16:21:42 [scrapy] INFO: Optional features available: ssl, http11
+2015-12-07 16:21:42 [scrapy] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'web_crawling.spiders', 'SPIDER_MODULES': ['web_crawling.spiders'], 'LOG_FILE': 'log', 'BOT_NAME': 'web_crawling'}
+2015-12-07 16:23:44 [scrapy] INFO: Scrapy 1.0.3 started (bot: web_crawling)
+2015-12-07 16:23:44 [scrapy] INFO: Optional features available: ssl, http11
+2015-12-07 16:23:44 [scrapy] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'web_crawling.spiders', 'SPIDER_MODULES': ['web_crawling.spiders'], 'LOG_FILE': 'log', 'BOT_NAME': 'web_crawling'}
+2015-12-07 16:28:04 [scrapy] INFO: Scrapy 1.0.3 started (bot: web_crawling)
+2015-12-07 16:28:04 [scrapy] INFO: Optional features available: ssl, http11
+2015-12-07 16:28:04 [scrapy] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'web_crawling.spiders', 'SPIDER_MODULES': ['web_crawling.spiders'], 'LOG_FILE': 'log', 'BOT_NAME': 'web_crawling'}
+2015-12-07 16:30:30 [scrapy] INFO: Scrapy 1.0.3 started (bot: web_crawling)
+2015-12-07 16:30:30 [scrapy] INFO: Optional features available: ssl, http11
+2015-12-07 16:30:30 [scrapy] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'web_crawling.spiders', 'SPIDER_MODULES': ['web_crawling.spiders'], 'LOG_FILE': 'log', 'BOT_NAME': 'web_crawling'}

@@ -15,3 +15,6 @@ NEWSPIDER_MODULE = 'web_crawling.spiders'
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'web_crawling (+http://www.yourdomain.com)'
+ITEM_PIPELINES = {
+    'web_crawling.pipelines.WebCrawlingPipeline':300
+}
