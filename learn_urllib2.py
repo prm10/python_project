@@ -5,6 +5,7 @@ import urllib2
 from lxml import etree
 import cPickle
 import re
+import gc
 
 
 class CrawlingUsingUrllib2(object):
@@ -39,6 +40,7 @@ class CrawlingUsingUrllib2(object):
             url1 = self.restUrl.pop()
             response = urllib2.urlopen(url1)
             webPage = response.read().decode('GBK','ignore')
+            response.close()
             sel = etree.HTML(webPage)
             sites = sel.xpath('//li[@class="item"]/div[@class="item-wrap"]')
             for site in sites:
@@ -55,9 +57,9 @@ class CrawlingUsingUrllib2(object):
                 self.write2txt('url: ' + url2, self.file)
                 self.write2txt('level: ' + level, self.file)
                 self.write2txt('price: ' + price, self.file)
-                self.write2txt('', self.file)
                 urlComment = url2[0:len(url2) - 5] + '_comment' + url2[len(url2) - 5:len(url2)]
-                # self.getComment(urlComment)
+                self.getComment(urlComment)
+                self.write2txt('', self.file)
             self.doneUrl.add(url1)
             print(str(len(self.doneUrl)) + " urls have been found")
             if len(self.doneUrl) > self.maxEcho: break
@@ -86,6 +88,7 @@ class CrawlingUsingUrllib2(object):
             request = urllib2.Request(url1)
             response = urllib2.urlopen(request)
             webPage = response.read().decode('gbk', "ignore")
+            response.close()
             sel = etree.HTML(webPage)
             if sel is None: break
             sites = sel.xpath('//dl[@class="cmt-content"]')
