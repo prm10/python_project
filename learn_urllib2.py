@@ -3,9 +3,7 @@
 __author__ = 'prm14'
 import urllib2
 from lxml import etree
-import cPickle
 import re
-import gc
 
 
 class CrawlingUsingUrllib2(object):
