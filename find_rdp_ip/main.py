@@ -12,16 +12,9 @@ def connScan(tgtIP, tgtPort):
         print("%s:%s/tcp open"%(tgtIP,tgtPort))
     except:
         return
-        # print(tgtIP+"/tcp closed")
-
-# tgtIP=gethostbyname('www.baidu.com')
-# print(tgtIP)
-# connScan(tgtHost, int(port))
 
 ip_array=[166,111,73,1]
-# ip_str=".".join(map(str,ip_array))
 for i in range(2,255):
     ip_array[3]=i
     ip_str=".".join(map(str,ip_array))
-    # print(ip_str)
     connScan(ip_str, 2333)
