@@ -1,9 +1,7 @@
 #!/usr/bin/python
 # coding=utf-8
 
-# targetIP=166.111.73.
 from socket import *
-import wmi
 
 def connScan(tgtIP, tgtPort):
     try:
@@ -22,7 +20,7 @@ def connScan(tgtIP, tgtPort):
 
 ip_array=[166,111,73,1]
 # ip_str=".".join(map(str,ip_array))
-for i in range(1,255):
+for i in range(2,255):
     ip_array[3]=i
     ip_str=".".join(map(str,ip_array))
     # print(ip_str)
