@@ -18,7 +18,8 @@ def post(url):
     # req.add_header('Cookie', 'tunet=yuanwq14%0Aywq%40hyq; thuwebcookie=2043441062.20480.0000')
     req.add_header('Connection', 'keep-alive')
 
-    data = 'action=login&username=prm14&password={MD5_HEX}61db7feedb460e622bcc617223a8ce9f&ac_id=1'
+    #data = 'action=login&username=prm14&password={MD5_HEX}61db7feedb460e622bcc617223a8ce9f&ac_id=1'
+	data = 'action=login&username=yuanwq14&password={MD5_HEX}c2e6a66962a2a38c1a65861f1ce9b513&ac_id=1'
     print(data)
     # enable cookie
     opener = urllib2.build_opener(urllib2.HTTPCookieProcessor())
