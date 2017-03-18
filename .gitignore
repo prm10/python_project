@@ -1,1 +1,4 @@
 *.pyc
+*.pdf
+old/data
+*.txt
